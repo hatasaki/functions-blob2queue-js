@@ -1,0 +1,18 @@
+{
+  "bindings": [
+    {
+      "name": "inBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "images/{name}",
+      "connection": "StorageConnection"
+    },
+    {
+      "type": "queue",
+      "name": "outQueue",
+      "queueName": "jobqueue",
+      "connection": "StorageConnection",
+      "direction": "out"
+    }
+  ]
+}
